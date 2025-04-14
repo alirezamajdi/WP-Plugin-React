@@ -1,0 +1,25 @@
+/* Common styles for both frontend and editor */
+.contact-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 400px;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+}
+
+.contact-card h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.contact-card p {
+  margin: 5px 0;
+  color: #666;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "contact/signup",
+  "autoload": {
+    "psr-4": {
+      "Contact\\SignUp\\": "includes/"
+    }
+  },
+  "authors": [
+    {
+      "name": "raihan islam"
+    }
+  ]
+}

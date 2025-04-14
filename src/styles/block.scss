@@ -1,0 +1,250 @@
+.contact-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 400px;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+}
+
+.contact-card h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.contact-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.contact-signup-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-submit {
+  margin-top: 20px;
+}
+
+.form-error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* contact-signup-form.css */
+
+/* contact-signup-form.css */
+
+/* TagList component styles */
+.tag-list-container {
+  margin-bottom: 15px;
+  position: relative; /* Ensure dropdown is positioned correctly */
+}
+
+/* The tags are displayed above the input field */
+.tag-list-container .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+/* Tag styles */
+.tag-list-container .tag-list span {
+  background-color: #007cba;
+  color: #fff;
+  padding: 0px 6px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.tag-list-container .tag-list button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.tag-list-container .tag-list button:hover {
+  color: #ffdddd;
+}
+
+/* TagList input styles */
+.tag-list-container .tag-list-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* TagList dropdown styles */
+.tag-list-dropdown {
+  position: absolute;
+  top: 100%; /* Aligns the dropdown directly below the input */
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+/* TagList dropdown items */
+.tag-list-dropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tag-list-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Error and success messages */
+form p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+form p.error {
+  color: #e74c3c;
+}
+
+form p.success {
+  color: #2ecc71;
+}
+
+/* contact-signup-form.css */
+
+#contact-signup-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact-signup-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#contact-signup-form input[type="text"],
+#contact-signup-form input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-signup-form .tag-list-container {
+  position: relative;
+}
+
+#contact-signup-form .tag-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#contact-signup-form .tag-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#contact-signup-form .tag-list li:hover {
+  background-color: #f0f0f0;
+}
+
+#contact-signup-form .selected-hobby {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 2px;
+  color: #333;
+  position: relative;
+}
+
+#contact-signup-form .selected-hobby button {
+  background: none;
+  border: none;
+  color: #d9534f;
+  cursor: pointer;
+  margin-left: 5px;
+  position: absolute;
+  right: -35px;
+  top: -14px;
+}
+
+#contact-signup-form .tag-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#contact-signup-form .tag-list-container input[type="text"] {
+  border: none;
+  flex: 1;
+  min-width: 150px;
+  padding: 5px;
+}
