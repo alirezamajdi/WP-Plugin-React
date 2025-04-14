@@ -1,4 +1,5 @@
 const defaultConfig = require("@wordpress/scripts/config/webpack.config");
+const path = require("path");
 
 module.exports = {
   ...defaultConfig,
@@ -11,6 +12,13 @@ module.exports = {
     path: __dirname + "/build",
     filename: "[name].js",
     publicPath: "/wp-content/plugins/contact-signup/build/",
+  },
+  resolve: {
+    ...defaultConfig.resolve,
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
   module: {
     ...defaultConfig.module,
@@ -41,9 +49,5 @@ module.exports = {
         ],
       },
     ],
-  },
-  resolve: {
-    ...defaultConfig.resolve,
-    extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
 };
